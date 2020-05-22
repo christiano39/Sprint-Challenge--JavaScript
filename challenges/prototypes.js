@@ -39,8 +39,25 @@
 
 // const cuboid = new CuboidMaker(4, 5, 5);
 
-// Test your volume and surfaceArea methods by uncommenting the logs below:
-// console.log(cuboid.volume()); // 100
-// console.log(cuboid.surfaceArea()); // 130
+// // Test your volume and surfaceArea methods by uncommenting the logs below:
+// // console.log(cuboid.volume()); // 100
+// // console.log(cuboid.surfaceArea()); // 130
 
+// function CubeMaker(length){
+//   CuboidMaker.call(this, length);
+// }
+
+// CubeMaker.prototype = Object.create(CuboidMaker.prototype);
+
+// CubeMaker.prototype.volume = function(){
+//   return Math.pow(this.length, 3);
+// };
+
+// CubeMaker.prototype.surfaceArea = function(){
+//   return 6 * Math.pow(this.length, 2);
+// }
+
+// const cube = new CubeMaker(5);
+// console.log(cube.volume());      // 125
+// console.log(cube.surfaceArea()); // 150
 
